@@ -1,0 +1,72 @@
+/* Aplica-se a todo o código */
+*{
+    padding: 0;
+    margin: 0;
+}
+/* Definição de variações do código */
+:root{
+    --cor-primaria: black;
+    --cor-secundaria: #426888;
+    --cor-fundo: #3c3d3f;
+    --texto-primario: #000000;
+    --texto-secundario: #ffffff;
+}
+/* Personalização do Menu */
+.menu{
+    background-color: var(--cor-fundo);
+    list-style: none;
+    display: flex;
+}
+.menu-item{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--texto-secundario);
+}
+.menu-item:hover {
+    color: var(--cor-fundo);
+    background-color: var(--texto-secundario);
+}
+/* Personalização do cabeçalho */
+.cabecalho{
+    text-align: center;
+    background-color: var(--texto-primario);
+    background: 
+        /* linear-gradient(90deg, rgba(20,10,160,0.9) 5%, rgba(20,20,20,0.9) 50%), */
+        url(fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+}
+.perfil{
+    border: 2px solid var(--cor-secundaria);
+    border-color: var(--texto-secundario);
+    border-radius: 50%;
+    margin: 50px;
+}
+.redessociais img{
+    padding: 10px;
+}
+.titulo{
+    color: var(--texto-secundario);
+}
+
+
+.bloco-texto h2{
+    border-bottom: 2px var(--cor-primaria) solid;
+}
+.bloco-texto p{
+    line-height: 1.5;
+    color: var(--cor-primaria);
+}
+.galeria-fotos img{
+    position: absolute;
+    width: 100px;
+    display: block;
+
+}
+.galeria{
+    margin: 20px;
+    border: 1px solid var(--cor-fundo);
+    border-color: var(--cor-secundaria);
+}
